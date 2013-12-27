@@ -1,0 +1,4 @@
+KaggleDigits
+============
+
+Kaggle Digits project
