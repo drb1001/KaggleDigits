@@ -1,17 +1,23 @@
-getwd()
 library("RColorBrewer")
 
-mydf  <-  read.csv("train.csv")
-
-# head(mydf)
-# summary(mydf)
+trainset <- read.csv("Original data sets/train.csv", header=TRUE)
+testset <- read.csv("Original data sets/test.csv", header=TRUE)
 
 my_palette <- colorRampPalette(c("white", "black"))(n = 50)
 
-shownumber  <- function(n=0, data=mydf) { 
-  test  <- as.matrix(mydf[n,][-1], nrow = 28, ncol = 28)
-  dim(test)  <-  c(28,28)
-  image(test, main = mydf[n,1] , ylim =c(1,0), col = my_palette)
+showtrainnumber <- function(n=0, data=trainset) { 
+  train  <- as.matrix(trainset[n,][-1], nrow = 28, ncol = 28)
+  dim(train)  <-  c(28,28)
+  image(train, main = trainset[n,1], ylim =c(1,0), col = my_palette)
 }
 
-for (mycount1 in 1000:1050 ) { shownumber(mycount1); Sys.sleep(0.1) }
+showtestnumber <- function(n=0, data=testset) { 
+  test  <- as.matrix(testset[n,], nrow = 28, ncol = 28)
+  dim(test)  <-  c(28,28)
+  image(test, main = "????" , ylim =c(1,0), col = my_palette)
+}
+
+for (mycount1 in 1000:1050 ) { showtrainnumber(mycount1); Sys.sleep(0.5) }
+
+showtrainnumber(12)
+showtestnumber(12)
