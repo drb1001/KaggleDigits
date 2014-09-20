@@ -1,0 +1,2 @@
+Baseline: 0.10014
+knn benchmark - download original: 0.96557
