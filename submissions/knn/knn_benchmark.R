@@ -2,8 +2,8 @@
 
 library(FNN)
 
-train <- read.csv("train.csv", header=TRUE)
-test <- read.csv("test.csv", header=TRUE)
+train <- read.csv("Original data sets/train.csv", header=TRUE)
+test <- read.csv("Original data sets/test.csv", header=TRUE)
 
 labels <- train[,1]
 train <- train[,-1]
