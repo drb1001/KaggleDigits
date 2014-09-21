@@ -1,2 +1,4 @@
 Baseline: 0.10014
 knn benchmark - download original: 0.96557
+knn, k=1: 0.97114
+knn, k=5: 0.96800
