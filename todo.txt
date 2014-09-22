@@ -1,0 +1,8 @@
+ - create cross validation framework (or use library?)
+ 
+ - run cross validatioon for knn, to optimise k
+ - try changing the method parameter in knn algorithm
+ 
+ - look at rf
+ 
+ - find next method to try??
