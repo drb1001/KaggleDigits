@@ -1,8 +1,11 @@
  - create cross validation framework (or use library?)
  
- - run cross validatioon for knn, to optimise k
+ - run cross validation for knn, to optimise k
  - try changing the method parameter in knn algorithm
  
  - look at rf
+ 
+ - see if adding new variables (heavily weighted) is better solution
+ - try pca
  
  - find next method to try??
