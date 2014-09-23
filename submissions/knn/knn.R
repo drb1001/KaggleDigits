@@ -12,10 +12,11 @@ test <- read.csv("Original data sets/test.csv", header=TRUE)
 labels <- train[,1]
 train <- train[,-1]
 
-results <- data.frame((0:9)[knn(train, test, labels, k = 5, algorithm="cover_tree")])
+results <- data.frame((0:9)[knn(train, test, labels, k = 3, algorithm="cover_tree")])
+
 names(results) <- c("Label")
 results$ImageId <- 1:nrow(results)
 results <- results[c(2,1)]
 
-write.csv(results, file="knn_benchmark_k5.csv", quote = FALSE, row.names = FALSE) 
+write.csv(results, file="knn_k3.csv", quote = FALSE, row.names = FALSE) 
 
