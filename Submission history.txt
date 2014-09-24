@@ -1,8 +1,10 @@
-Baseline: 0.10014
-knn benchmark - download original: 0.96557
-knn, k=1: 0.97114
-knn, k=5: 0.96800
-knn, k=3: 0.96857
-knn, k=10: 0.96557
-rf, t=5: 0.91343
-rf, t=20: 0.95714
+Baseline: 	0.10014
+knn benchmark:	0.96557
+knn, k=1:	0.97114 *
+knn, k=5:	0.96800
+knn, k=3:	0.96857
+knn, k=10:	0.96557
+rf, t=5:	0.91343
+rf, t=20:	0.95714
+rf, t=100: 	0.96514
+rf, t=1000:	0.96686
