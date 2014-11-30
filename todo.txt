@@ -1,5 +1,5 @@
  - create cross validation framework (or use library?)
- 
+
  - run cross validation for knn, to optimise k
  - try changing the alogorithm method parameter in knn algorithm
  
@@ -7,3 +7,5 @@
  - try pca
  
  - find next method to try??
+
+ — look into logistic regression, cart, rf, knn
